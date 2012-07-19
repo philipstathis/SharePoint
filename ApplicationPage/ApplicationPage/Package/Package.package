@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="a73fb0c3-d44d-476f-b91c-dd03e2024232" solutionId="a73fb0c3-d44d-476f-b91c-dd03e2024232" resetWebServer="false" name="AddSolnPage" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="43191f5c-bf61-4638-84c7-7a7417ea34f5" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="52bda26a-c178-4156-b301-8cfb4a5bd721" />
+  </projectItems>
+</package>

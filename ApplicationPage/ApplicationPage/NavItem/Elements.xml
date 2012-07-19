@@ -1,0 +1,8 @@
+﻿<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <CustomAction Id="[GUID]" GroupId="FarmManagement"
+      Location="Microsoft.SharePoint.Administration.SystemSettings"
+      Sequence="10"
+      Title="Add Solution" Description="">
+    <UrlAction Url="_admin/ApplicationPage/AddSolution.aspx" />
+  </CustomAction>
+</Elements>
