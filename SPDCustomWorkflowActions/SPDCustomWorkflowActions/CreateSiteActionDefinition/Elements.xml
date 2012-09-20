@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <WorkflowActions>
+    <Action Name="Create Site"
+            Assembly="$SharePoint.Project.AssemblyFullName$"
+            ClassName="$SharePoint.Type.3193f9d9-0aef-4770-866e-b2a7eb9e6945.FullName$"
+            FunctionName="CreateSite"
+            AppliesTo="all"
+            UsesCurrentItem="true"
+            Category="Sandboxed Workflow Actions"
+            SandboxedFunction="true">
+      
+      <RuleDesigner Sentence="Create Site with name %1 (exceptions logged to %2)">
+        <FieldBind Field="siteName" Text="Site Name" Id="1"
+                   DesignerType="TextBox"/>
+        <FieldBind Field="exception" Text="Exception" Id="2"
+                   DesignerType="ParameterNames"/>
+      </RuleDesigner>
+
+      <Parameters>
+        <Parameter Name="__Context" Type="Microsoft.SharePoint.WorkflowActions.WorkflowContext, Microsoft.SharePoint.WorkflowActions"
+                   Direction="In"
+                   DesignerType="Hide"/>
+        <Parameter Name="siteName"
+                   Type="System.String, mscorlib"
+                   Direction="In"
+                   DesignerType="TextBox"
+                   Description="Name of the site to create"/>
+        <Parameter Name="exception"
+                   Type="System.String, mscorlib"
+                   Direction="Out"
+                   DesignerType="ParameterNames"
+                   Description="Exception Encountered"/>
+      </Parameters>
+      
+    </Action>
+  </WorkflowActions>
+</Elements>
